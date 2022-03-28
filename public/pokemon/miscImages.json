@@ -1,0 +1,414 @@
+{
+  "raticate": [
+    [
+      "Totem Alolan Raticate",
+      "sprites/pokemon/other/official-artwork/10093.png"
+    ]
+  ],
+  "pikachu": [
+    [
+      "Pikachu Rock Star",
+      "sprites/pokemon/other/official-artwork/10080.png"
+    ],
+    [
+      "Pikachu Belle",
+      "sprites/pokemon/other/official-artwork/10081.png"
+    ],
+    [
+      "Pikachu Pop Star",
+      "sprites/pokemon/other/official-artwork/10082.png"
+    ],
+    [
+      "Pikachu Ph.D.",
+      "sprites/pokemon/other/official-artwork/10083.png"
+    ],
+    [
+      "Pikachu Libre",
+      "sprites/pokemon/other/official-artwork/10084.png"
+    ],
+    [
+      "Original Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10094.png"
+    ],
+    [
+      "Hoenn Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10095.png"
+    ],
+    [
+      "Sinnoh Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10096.png"
+    ],
+    [
+      "Unova Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10097.png"
+    ],
+    [
+      "Kalos Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10098.png"
+    ],
+    [
+      "Alola Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10099.png"
+    ],
+    [
+      "Partner Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10148.png"
+    ],
+    [
+      "World Cap Pikachu",
+      "sprites/pokemon/other/official-artwork/10160.png"
+    ]
+  ],
+  "marowak": [
+    [
+      "Totem Alolan Marowak",
+      "sprites/pokemon/other/official-artwork/10149.png"
+    ]
+  ],
+  "castform": [
+    [
+      "Sunny Castform",
+      "sprites/pokemon/other/official-artwork/10013.png"
+    ],
+    [
+      "Rainy Castform",
+      "sprites/pokemon/other/official-artwork/10014.png"
+    ],
+    [
+      "Snowy Castform",
+      "sprites/pokemon/other/official-artwork/10015.png"
+    ]
+  ],
+  "kyogre": [
+    [
+      "Primal Kyogre",
+      "sprites/pokemon/other/official-artwork/10077.png"
+    ]
+  ],
+  "groudon": [
+    [
+      "Primal Groudon",
+      "sprites/pokemon/other/official-artwork/10078.png"
+    ]
+  ],
+  "deoxys": [
+    [
+      "Attack Deoxys",
+      "sprites/pokemon/other/official-artwork/10001.png"
+    ],
+    [
+      "Defense Deoxys",
+      "sprites/pokemon/other/official-artwork/10002.png"
+    ],
+    [
+      "Speed Deoxys",
+      "sprites/pokemon/other/official-artwork/10003.png"
+    ]
+  ],
+  "wormadam": [
+    [
+      "Sandy Wormadam",
+      "sprites/pokemon/other/official-artwork/10004.png"
+    ],
+    [
+      "Trash Wormadam",
+      "sprites/pokemon/other/official-artwork/10005.png"
+    ]
+  ],
+  "rotom": [
+    [
+      "Heat Rotom",
+      "sprites/pokemon/other/official-artwork/10008.png"
+    ],
+    [
+      "Wash Rotom",
+      "sprites/pokemon/other/official-artwork/10009.png"
+    ],
+    [
+      "Frost Rotom",
+      "sprites/pokemon/other/official-artwork/10010.png"
+    ],
+    [
+      "Fan Rotom",
+      "sprites/pokemon/other/official-artwork/10011.png"
+    ],
+    [
+      "Mow Rotom",
+      "sprites/pokemon/other/official-artwork/10012.png"
+    ]
+  ],
+  "giratina": [
+    [
+      "Origin Giratina",
+      "sprites/pokemon/other/official-artwork/10007.png"
+    ]
+  ],
+  "shaymin": [
+    [
+      "Sky Shaymin",
+      "sprites/pokemon/other/official-artwork/10006.png"
+    ]
+  ],
+  "basculin": [
+    [
+      "Blue-Striped Basculin",
+      "sprites/pokemon/other/official-artwork/10016.png"
+    ]
+  ],
+  "darmanitan": [
+    [
+      "Zen Darmanitan",
+      "sprites/pokemon/other/official-artwork/10017.png"
+    ]
+  ],
+  "tornadus": [
+    [
+      "Therian Tornadus",
+      "sprites/pokemon/other/official-artwork/10019.png"
+    ]
+  ],
+  "thundurus": [
+    [
+      "Therian Thundurus",
+      "sprites/pokemon/other/official-artwork/10020.png"
+    ]
+  ],
+  "landorus": [
+    [
+      "Therian Landorus",
+      "sprites/pokemon/other/official-artwork/10021.png"
+    ]
+  ],
+  "kyurem": [
+    [
+      "Black Kyurem",
+      "sprites/pokemon/other/official-artwork/10022.png"
+    ],
+    [
+      "White Kyurem",
+      "sprites/pokemon/other/official-artwork/10023.png"
+    ]
+  ],
+  "keldeo": [
+    [
+      "Resolute Keldeo",
+      "sprites/pokemon/other/official-artwork/10024.png"
+    ]
+  ],
+  "meloetta": [
+    [
+      "Pirouette Meloetta",
+      "sprites/pokemon/other/official-artwork/10018.png"
+    ]
+  ],
+  "greninja": [
+    [
+      "Ash's Greninja",
+      "sprites/pokemon/other/official-artwork/10117.png"
+    ]
+  ],
+  "meowstic": [
+    [
+      "Female Meowstic",
+      "sprites/pokemon/other/official-artwork/10025.png"
+    ]
+  ],
+  "aegislash": [
+    [
+      "Blade Aegislash",
+      "sprites/pokemon/other/official-artwork/10026.png"
+    ]
+  ],
+  "pumpkaboo": [
+    [
+      "Small Pumpkaboo",
+      "sprites/pokemon/other/official-artwork/10027.png"
+    ],
+    [
+      "Large Pumpkaboo",
+      "sprites/pokemon/other/official-artwork/10028.png"
+    ],
+    [
+      "Super Pumpkaboo",
+      "sprites/pokemon/other/official-artwork/10029.png"
+    ]
+  ],
+  "gourgeist": [
+    [
+      "Small Gourgeist",
+      "sprites/pokemon/other/official-artwork/10030.png"
+    ],
+    [
+      "Large Gourgeist",
+      "sprites/pokemon/other/official-artwork/10031.png"
+    ],
+    [
+      "Super Gourgeist",
+      "sprites/pokemon/other/official-artwork/10032.png"
+    ]
+  ],
+  "zygarde": [
+    [
+      "10% Zygarde",
+      "sprites/pokemon/other/official-artwork/10118.png"
+    ],
+    [
+      "50% Zygarde",
+      "sprites/pokemon/other/official-artwork/10119.png"
+    ],
+    [
+      "Complete Zygarde",
+      "sprites/pokemon/other/official-artwork/10120.png"
+    ]
+  ],
+  "hoopa": [
+    [
+      "Hoopa Unbound",
+      "sprites/pokemon/other/official-artwork/10086.png"
+    ]
+  ],
+  "oricorio": [
+    [
+      "Pom-pom Oricorio",
+      "sprites/pokemon/other/official-artwork/10123.png"
+    ],
+    [
+      "Pa’u Oricorio",
+      "sprites/pokemon/other/official-artwork/10124.png"
+    ],
+    [
+      "Sensu Oricorio",
+      "sprites/pokemon/other/official-artwork/10125.png"
+    ]
+  ],
+  "ribombee": [
+    [
+      "Totem Ribombee",
+      "sprites/pokemon/other/official-artwork/10150.png"
+    ]
+  ],
+  "rockruff": [
+    [
+      "Own Tempo Rockruff",
+      "sprites/pokemon/other/official-artwork/10151.png"
+    ]
+  ],
+  "lycanroc": [
+    [
+      "Midnight Lycanroc",
+      "sprites/pokemon/other/official-artwork/10126.png"
+    ],
+    [
+      "Dusk Lycanroc",
+      "sprites/pokemon/other/official-artwork/10152.png"
+    ]
+  ],
+  "wishiwashi": [
+    [
+      "School Wishiwashi",
+      "sprites/pokemon/other/official-artwork/10127.png"
+    ]
+  ],
+  "araquanid": [
+    [
+      "Totem Araquanid",
+      "sprites/pokemon/other/official-artwork/10153.png"
+    ]
+  ],
+  "lurantis": [
+    [
+      "Totem Lurantis",
+      "sprites/pokemon/other/official-artwork/10128.png"
+    ]
+  ],
+  "salazzle": [
+    [
+      "Totem Salazzle",
+      "sprites/pokemon/other/official-artwork/10129.png"
+    ]
+  ],
+  "minior": [
+    [
+      "Red Core Minior",
+      "sprites/pokemon/other/official-artwork/10136.png"
+    ]
+  ],
+  "togedemaru": [
+    [
+      "Totem Togedemaru",
+      "sprites/pokemon/other/official-artwork/10154.png"
+    ]
+  ],
+  "mimikyu": [
+    [
+      "Totem Disguised Mimikyu",
+      "sprites/pokemon/other/official-artwork/10144.png"
+    ]
+  ],
+  "kommo-o": [
+    [
+      "Totem Kommo-o",
+      "sprites/pokemon/other/official-artwork/10146.png"
+    ]
+  ],
+  "necrozma": [
+    [
+      "Dusk Necrozma",
+      "sprites/pokemon/other/official-artwork/10155.png"
+    ],
+    [
+      "Dawn Necrozma",
+      "sprites/pokemon/other/official-artwork/10156.png"
+    ],
+    [
+      "Ultra Necrozma",
+      "sprites/pokemon/other/official-artwork/10157.png"
+    ]
+  ],
+  "toxtricity": [
+    [
+      "Low Key Toxtricity",
+      "sprites/pokemon/other/official-artwork/10184.png"
+    ]
+  ],
+  "eiscue": [
+    [
+      "Noice Eiscue",
+      "sprites/pokemon/other/official-artwork/10185.png"
+    ]
+  ],
+  "indeedee": [
+    [
+      "Female Indeedee",
+      "sprites/pokemon/other/official-artwork/10186.png"
+    ]
+  ],
+  "zacian": [
+    [
+      "Crowned Zacian",
+      "sprites/pokemon/other/official-artwork/10188.png"
+    ]
+  ],
+  "zamazenta": [
+    [
+      "Crowned Zamazenta",
+      "sprites/pokemon/other/official-artwork/10189.png"
+    ]
+  ],
+  "urshifu": [
+    [
+      "Rapid Strike Urshifu",
+      "sprites/pokemon/other/official-artwork/10191.png"
+    ]
+  ],
+  "calyrex": [
+    [
+      "Ice Calyrex",
+      "sprites/pokemon/other/official-artwork/10193.png"
+    ],
+    [
+      "Shadow Calyrex",
+      "sprites/pokemon/other/official-artwork/10194.png"
+    ]
+  ]
+}
