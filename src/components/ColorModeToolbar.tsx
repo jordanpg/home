@@ -8,7 +8,7 @@ const ColorModeToolbar: React.FC = (props) => {
     return (
         <AppBar position="static">
             <Toolbar>
-                <div style={{ flexGrow: 1 }}>
+                <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
                     { props.children }
                 </div>
                 <Tooltip title={isLight ? "Dark Mode" : "Light Mode"}>

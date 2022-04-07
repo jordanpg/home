@@ -1,3 +1,6 @@
+import React from "react";
+import { ForceGraph2D } from "react-force-graph";
+
 export class WordLink
 {
 	protected _word: string | null;
@@ -20,8 +23,9 @@ export class WordLink
 
 export default class Chatty
 {
-	protected wordGraph: { [word: string]: WordLink[] } = {};
+	protected wordGraph: { [word: string]: WordLink[] } = { '': [] };
 
+	// Add or strengthen a link from a -> b
 	addLink(a: string, b: string | null)
 	{
 		const links = this.wordGraph[a] ?? (this.wordGraph[a] = []);
@@ -32,6 +36,7 @@ export default class Chatty
 		return link.num;
 	}
 
+	// Randomly select a next word (or null to end output) using the word graph
 	chain(a: string): string | null
 	{
 		const links = this.wordGraph[a];
@@ -46,6 +51,7 @@ export default class Chatty
 		return links[w.findIndex(v => v > select)].word;
 	}
 
+	// Process a sentence and add all word sequences to the word graph
 	digest(sentence: string)
 	{
 		const words = sentence.split(' ').filter(v => v.length > 0);
@@ -58,6 +64,7 @@ export default class Chatty
 		this.addLink(last, null);
 	}
 
+	// Generate a random sentence using word graph
 	generate(maxChain: number = 50)
 	{
 		let i = 0, word: string | null = '', words: string[] = [];
@@ -69,5 +76,26 @@ export default class Chatty
 		}
 
 		return words.join(' ');
+	}
+
+	createGraphData()
+	{
+		const data: { nodes: { id: string, group: number }[], links: { source: string, target: string, value: number }[] } = { nodes: [], links: [] };
+
+		data.nodes.push({ id: '<END>', group: 2 });
+		Object.keys(this.wordGraph).forEach(v => {
+			const n = { id: v, group: 1 };
+			if(v === '') {
+				n.id = "<START>";
+				n.group = 2;
+			}
+			data.nodes.push(n);
+
+			const links = this.wordGraph[v];
+			links.forEach(l => data.links.push({ source: n.id, target: l.word || '<END>', value: l.num }));
+		});
+
+		console.log(data);
+		return data;
 	}
 };

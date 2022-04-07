@@ -1,0 +1,27 @@
+.chatboxContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 4px;
+}
+
+.chatboxMessages {
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+}
+
+.chatboxResponse {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid;
+}
+
+.chatboxName {
+    font-weight: bold;
+}
+
+.chatboxMessage[msg-name="User"] {
+    background-color: rgba(127, 127, 127, 0.2);
+}
