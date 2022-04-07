@@ -1,5 +1,5 @@
 import { Timeline } from '@mui/icons-material';
-import { Typography, Container, Box, Tooltip, IconButton, Modal, Card, CardContent } from '@mui/material';
+import { Typography, Container, Box, Tooltip, IconButton, Modal, Card, CardContent, NoSsr } from '@mui/material';
 import { styled } from '@mui/styles';
 import React, { useEffect } from 'react';
 // import { ForceGraph3D } from 'react-force-graph';
@@ -27,6 +27,7 @@ const ChattyPage: React.FC = () => {
 		{ message: "Type messages to begin training and talking with the chatbot!", name: "System" }
 	]);
 	const [open, setOpen] = React.useState(false);
+	const [dragModal, setDragModal] = React.useState(false);
 
 	const bot = React.useMemo(() => new Chatty(), [Chatty]);
 	const graphData = React.useMemo(() => bot.createGraphData(), [Chatty, messages]);
@@ -70,22 +71,80 @@ const ChattyPage: React.FC = () => {
 				}
 			`}</style> */}
 			<Box sx={{ padding: '24px', display: 'flex', flex: '1', overflow: 'auto' }}>
-				<ChattyChatbox messages={messages} onSubmit={msg => {
-					bot.digest(msg);
+				<div style={{ display: 'flex', flex: '1' }}
+					onDrop={e => {
+						// console.log(e);
 
-					setMessages([...messages,
-						{
-							name: 'User',
-							message: msg
-						},
-						{
-							name: 'Chatty',
-							message: bot.generate()
+						e.stopPropagation();
+						e.preventDefault();
+
+						let file: File;
+						if(e.dataTransfer.items) {
+							// console.log(e.dataTransfer.items[0]);
+							if(e.dataTransfer.items[0].kind !== 'file') {
+								e.dataTransfer.items[0].getAsString(s => bot.massDigest(s));
+								setMessages([...messages, {
+									name: "System",
+									message: "String processed successfully"
+								}]);
+								return false;
+							}
+							file = e.dataTransfer.items[0].getAsFile()!; // If the kind is file, then this should not be null
+						} else {
+							file = e.dataTransfer.files[0];
 						}
-					]);
 
-					return true;
-				}} />
+						const reader = new FileReader();
+						reader.onload = e => {
+							console.log(e.target);
+							if(e.target?.result){
+								bot.massDigest(e.target?.result as string);
+								setMessages([...messages, {
+									name: "System",
+									message: "File uploaded successfully"
+								}]);
+							}
+						};
+						// console.log(file);
+						reader.readAsText(file);
+
+						return false;
+					}}
+					onDragOver={e => {
+						e.stopPropagation();
+						e.preventDefault();
+					}}
+					onDragEnter={e => {
+						e.stopPropagation();
+						e.preventDefault();
+
+						setDragModal(true);
+					}}
+					onDragEnd={e => {
+						e.stopPropagation();
+						e.preventDefault();
+
+						setDragModal(false);
+					}}
+				>
+					<ChattyChatbox messages={messages} onSubmit={msg => {
+						bot.digest(msg);
+
+						setMessages([...messages,
+							{
+								name: 'User',
+								message: msg
+							},
+							{
+								name: 'Chatty',
+								message: bot.generate()
+							}
+						]);
+
+						return true;
+					}} />
+				</div>
+				
 
 				<Modal
 					open={open}
@@ -94,26 +153,27 @@ const ChattyPage: React.FC = () => {
 					<Card variant="outlined" sx={{ position: 'absolute', top: "50%", left: '50%', transform: 'translate(-50%,-50%)', height: '80vh', width: '80vw' }}>
 						<CardContent sx={{ maxHeight: '100%', display: 'flexbox', height: '100%' }}>
 							<div ref={el => { setCd(el); }} style={{ maxHeight: '100%', height: '100%' }}>
-								<ForceGraph3D
-									width={cw}
-									height={ch}
-									graphData={graphData}
-									nodeAutoColorBy="group"
-									nodeThreeObject={(node: any) => {
-										const sprite = new SpriteText(node.id);
-										sprite.color = node.color;
-										sprite.textHeight = 8;
-										return sprite;
-									}}
-									linkDirectionalArrowLength={5}
-								/>
+								<NoSsr>
+									<ForceGraph3D
+										width={cw}
+										height={ch}
+										graphData={graphData}
+										nodeAutoColorBy="group"
+										nodeThreeObject={(node: any) => {
+											const sprite = new SpriteText(node.id);
+											sprite.color = node.color;
+											sprite.textHeight = 8;
+											return sprite;
+										}}
+										linkDirectionalArrowLength={5}
+									/>	
+								</NoSsr>
 							</div>
 							
 						</CardContent>
 					</Card>
 				</Modal>
 			</Box>
-			
 		</Container>
 	);
 };

@@ -54,6 +54,7 @@ export default class Chatty
 	// Process a sentence and add all word sequences to the word graph
 	digest(sentence: string)
 	{
+		sentence = sentence.toLowerCase().trim();
 		const words = sentence.split(' ').filter(v => v.length > 0);
 
 		const last = words.reduce((prev, curr) => {
@@ -62,6 +63,12 @@ export default class Chatty
 			return curr;
 		}, '');
 		this.addLink(last, null);
+	}
+
+	// Digest a lot of text, splitting by periods and newlines
+	massDigest(str: string)
+	{
+		str.split(/[\n\r.?!]/gm).filter(v=>v.length>0).forEach(v => this.digest(v));
 	}
 
 	// Generate a random sentence using word graph
